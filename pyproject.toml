@@ -7,7 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.135.2",
     "modal>=1.4.1",
-    "openmed>=0.6.4",
+    "openmed>=1.5.2",
     "pydantic>=2.12.5",
     "requests>=2.33.1",
 ]

@@ -287,6 +287,18 @@ wheels = [
 ]
 
 [[package]]
+name = "faker"
+version = "40.36.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tzdata", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/98/d2/026af1e002bbc6df534d1f8262b18ec79a974f928e9290bfbfdfe7c7b2af/faker-40.36.0.tar.gz", hash = "sha256:754048c76c03afa7de83eee8f4bcee3cf668cbb7d995f54a4e9678db7f110308", size = 2025903, upload-time = "2026-07-24T21:11:33.088Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/50/9a/b947ed175ce9a0dcb070ccf3607f0ce8720cfb5ed1a36166a150b2acd5af/faker-40.36.0-py3-none-any.whl", hash = "sha256:82b9497d9cfe017048075bcf969298a74b1b6e39f5e4dad1211085d1133f7b62", size = 2062829, upload-time = "2026-07-24T21:11:31.37Z" },
+]
+
+[[package]]
 name = "fastapi"
 version = "0.135.2"
 source = { registry = "https://pypi.org/simple" }
@@ -506,7 +518,7 @@ dependencies = [
 requires-dist = [
     { name = "fastapi", specifier = ">=0.135.2" },
     { name = "modal", specifier = ">=1.4.1" },
-    { name = "openmed", specifier = ">=0.6.4" },
+    { name = "openmed", specifier = ">=1.5.2" },
     { name = "pydantic", specifier = ">=2.12.5" },
     { name = "requests", specifier = ">=2.33.1" },
 ]
@@ -612,14 +624,15 @@ wheels = [
 
 [[package]]
 name = "openmed"
-version = "0.6.4"
+version = "1.5.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "faker" },
     { name = "pysbd" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c5/8e/289c7d52e86cc300f0db2fffa927c9b152e642af4641b3b3486b3f8a3579/openmed-0.6.4.tar.gz", hash = "sha256:29c993b65d80f6befaa5adb2a34e355d35fb811861fe32f885f0cda8a126219b", size = 96448, upload-time = "2026-03-27T19:15:15.436Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8f/73/456b8be4ad34afd418d5576e283bc42854e7bb368f5cfee32fd13afb33c1/openmed-1.5.2.tar.gz", hash = "sha256:7743787f17e81871d92be04b3b4ba0bc6cd7e500d7c261df20dfc8013bf25720", size = 171589, upload-time = "2026-05-27T17:53:01.138Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c2/1b/0c0946f1161658a82467181cf8bfafdd01dd91ff8a382039cc3361d1098d/openmed-0.6.4-py3-none-any.whl", hash = "sha256:b7da0b83705516de60c4feac1366b19ed054390b5a0ab863777c2ae0a81ea192", size = 118951, upload-time = "2026-03-27T19:15:16.325Z" },
+    { url = "https://files.pythonhosted.org/packages/18/3b/c710a54a93e446c78563e861141db83187f37099a5de28f2d63b5f070981/openmed-1.5.2-py3-none-any.whl", hash = "sha256:b08f17afb71bf6178fcfa93de2b940673a77b7bef50601ab20aadfd057ed8ff9", size = 215539, upload-time = "2026-05-27T17:53:02.209Z" },
 ]
 
 [[package]]
@@ -947,6 +960,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/55/e3/70399cb7dd41c10ac53367ae42139cf4b1ca5f36bb3dc6c9d33acdb43655/typing_inspection-0.4.2.tar.gz", hash = "sha256:ba561c48a67c5958007083d386c3295464928b01faa735ab8547c5692e87f464", size = 75949, upload-time = "2025-10-01T02:14:41.687Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl", hash = "sha256:4ed1cacbdc298c220f1bd249ed5287caa16f34d44ef4e9c3d0cbad5b521545e7", size = 14611, upload-time = "2025-10-01T02:14:40.154Z" },
+]
+
+[[package]]
+name = "tzdata"
+version = "2026.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/92/ff/5a28bdfd8c3ebec42564ac7d0e54ca3db65044a9314a97f9564fa7a1e926/tzdata-2026.3.tar.gz", hash = "sha256:4a1518b8993086a7982523e071643f3c0e5f213e75b21318e78bcabfff9d1415", size = 198674, upload-time = "2026-07-10T08:50:37.887Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e5/6d/b53b99a9f2766d095985947a5782f1702cabb129a34f7a802d7197af832f/tzdata-2026.3-py2.py3-none-any.whl", hash = "sha256:dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931", size = 348168, upload-time = "2026-07-10T08:50:36.46Z" },
 ]
 
 [[package]]
